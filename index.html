@@ -240,9 +240,88 @@
 .search-input.show {
     display: block; /* Cuando se muestra la caja de búsqueda */
 }
-<!-- encerrar productos  -->
+/* Estilos para el anuncio */
+    .anuncio {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.7);
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        color: #fff;
+        z-index: 10000; /* Asegura que esté sobre todo el contenido */
+    }
+    .anuncio img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+    .anuncio h1 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+    .anuncio p {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+    .cta-btn {
+        text-decoration: none;
+        padding: 10px 20px;
+        background-color: #e74c3c;
+        color: #fff;
+        border-radius: 5px;
+        font-size: 1.2rem;
+        transition: background-color 0.3s ease;
+    }
+    .cta-btn:hover {
+        background-color: #c0392b;
+    }
+    .cerrar {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 1.5rem;
+        color: #fff;
+        background: #e74c3c;
+        border: none;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    .cerrar:hover {
+        background-color: #c0392b;
+    }
+
+    /* Estilo para oscurecer el fondo detrás del anuncio */
+    .fondo-oscuro {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 9999; /* Fondo debajo del anuncio */
+    }
     
     </style>
+    <div class="fondo-oscuro" id="fondoOscuro"></div>
+<div class="anuncio" id="anuncio">
+    <button class="cerrar" onclick="cerrarAnuncio()">×</button>
+     
+    <h1>📲 ¡Descarga la app de BebidasBEVHS24h!</h1>
+    <p>🍹 Compra rápido y fácil.</p>
+    <p>🚀 ¡Hazlo ahora y disfruta!</p>
+    <a href="https://bebidasbevhs24h.uptodown.com/android/descargar" class="cta-btn">Descargar Ahora</a>
+</div>
 </head>
 <body>
 <div class="header">
@@ -262,7 +341,7 @@
     </div>
 </div>
     <!-- colocar productos -->
-</div>div>
+</div>
 
 <div class="product-container">
     <div class="product-card">
@@ -517,25 +596,25 @@
     <div class="product-card">
         <img src="https://d1on8qs0xdu5jz.cloudfront.net/webapp/images/productos/b/0000003000/3008.jpg" alt="Cerveza Quilmes Clásica Botella Retornable 1Lt">
         <div class="product-title">Cerveza Quilmes Clásica Botella Retornable 1L</div>
-        <div class="price" data-price="2800">$2.800</div>
+        <div class="price" data-price="2100">$2.600</div>
         <div class="quantity-container">
             <button class="quantity-button" onclick="changeQuantity('Cerveza Quilmes Clásica Botella Retornable 1L', -1)">-</button>
             <input type="number" id="quantity-Cerveza Quilmes Clásica Botella Retornable 1L" class="quantity-input" value="1" min="1" readonly>
             <button class="quantity-button" onclick="changeQuantity('Cerveza Quilmes Clásica Botella Retornable 1L', 1)">+</button>
         </div>
-        <button class="add-button" onclick="addToCart('Cerveza Quilmes Clásica Botella Retornable 1L', 2800, 'Cerveza Quilmes Clásica Botella Retornable 1L')">Agregar</button>
+        <button class="add-button" onclick="addToCart('Cerveza Quilmes Clásica Botella Retornable 1L', 2600, 'Cerveza Quilmes Clásica Botella Retornable 1L')">Agregar</button>
    
   </div>
     <div class="product-card">
         <img src="https://www.distribuidoraniki.com.ar/database/articulos/fotos/659/Cerveza%20Andes%20Clasica%201lt%20vidrio%20retornable__1.jpg" alt="Cerveza Andes Clasica Botella retornable 1L">
         <div class="product-title">Cerveza Andes Clasica Botella retornable 1L</div>
-        <div class="price" data-price="2.600">$2.600</div>
+        <div class="price" data-price="2.500">$2.500</div>
         <div class="quantity-container">
             <button class="quantity-button" onclick="changeQuantity('Cerveza Andes Clasica Botella retornable 1L', -1)">-</button>
             <input type="number" id="quantity-Cerveza Andes Clasica Botella retornable 1L" class="quantity-input" value="1" min="1" readonly>
             <button class="quantity-button" onclick="changeQuantity('Cerveza Andes Clasica Botella retornable 1L', 1)">+</button>
         </div>
-        <button class="add-button" onclick="addToCart('Cerveza Andes Clasica Botella retornable 1L', 2600, 'Cerveza Andes Clasica Botella retornable 1L')">Agregar</button>
+        <button class="add-button" onclick="addToCart('Cerveza Andes Clasica Botella retornable 1L', 2500, 'Cerveza Andes Clasica Botella retornable 1L')">Agregar</button>
     
 </div>
            <!-- VINOSdiv-->
@@ -788,6 +867,26 @@ function searchProducts() {
         }
     });
 }
+<!-- anunció -->
+ // Mostrar el anuncio al cargar la página
+    window.onload = function() {
+        const anuncio = document.getElementById('anuncio');
+        const fondoOscuro = document.getElementById('fondoOscuro');
+
+        // Mostrar el anuncio y el fondo oscuro
+        anuncio.style.display = 'block';
+        fondoOscuro.style.display = 'block';
+    };
+
+    // Función para cerrar el anuncio
+    function cerrarAnuncio() {
+        const anuncio = document.getElementById('anuncio');
+        const fondoOscuro = document.getElementById('fondoOscuro');
+
+        // Ocultar el anuncio y el fondo oscuro
+        anuncio.style.display = 'none';
+        fondoOscuro.style.display = 'none';
+    }
 </script>
 
 
