@@ -311,6 +311,34 @@
         background: rgba(0, 0, 0, 0.5);
         z-index: 9999; /* Fondo debajo del anuncio */
     }
+   .offer-tag {
+margin-top: 0%; /* Aplica margen superior solo a las tarjetas de ofertas */
+    position: absolute;
+    top: 0px; /* Ajusta según tu diseño */
+    left: 1px; /* Ajusta según tu diseño */
+    background-color:#ffd600; /* Color rojo para destacar */
+    color: #fff;
+    font-size: 14px; /* Tamaño del texto */
+    font-weight: bold;
+    padding: 5px 10px; /* Espaciado interno */
+    border-radius: 4px; /* Bordes redondeados */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+    z-index: 100; /* Asegura que esté encima de otros elementos */
+    
+}
+
+.product-card {
+    position: relative; /* Importante para posicionar la etiqueta de forma absoluta */
+    background-color: #fff;
+    border: 3px solid #ddd;
+    
+    
+    
+    border-radius: 8px;
+    padding: 5px;
+    text-align: left;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+} 
     
     </style>
     <div class="fondo-oscuro" id="fondoOscuro"></div>
@@ -344,6 +372,40 @@
 </div>
 
 <div class="product-container">
+  <!-- PROMOS  -->
+  
+  
+  <div class="product-card">
+    <div class="offer-tag">¡PROMO!</div> <!-- Etiqueta de oferta -->
+        <img src="https://i.ibb.co/fvwdB4Q/1-20241130-215536-0000.png" alt=" 2 Lata Quilmes 710cc ">
+        <div class="product-title"> 2 Lata Quilmes 710cc </div>
+        <div class="price" data-price="4700">$4.700</div>
+        <div class="quantity-container">
+            <button class="quantity-button" onclick="changeQuantity('-2-lata-quilmes-710cc-', -1)">-</button>
+            <input type="number" id="quantity--2-lata-quilmes-710cc-" class="quantity-input" value="1" min="1" readonly>
+            <button class="quantity-button" onclick="changeQuantity('-2-lata-quilmes-710cc-', 1)">+</button>
+        </div>
+        <button class="add-button" onclick="addToCart(' 2 Lata Quilmes 710cc ', 4700, '-2-lata-quilmes-710cc-')">Agregar</button>
+    </div>
+    
+    <div class="product-card">
+        <div class="offer-tag">¡PROMO!</div> <!-- Etiqueta de oferta -->
+        <img src="https://i.ibb.co/Xp3L0ZX/1-20241130-223154-0000.png" alt="2 FRIZZÉ ">
+        <div class="product-title">2 FRIZZÉ BLUE O ITALIAN LIMON</div>
+        <div class="price" data-price="5400">$5.400</div>
+        <div class="quantity-container">
+            <button class="quantity-button" onclick="changeQuantity('2-frizzé-', -1)">-</button>
+            <input type="number" id="quantity-2-frizzé-" class="quantity-input" value="1" min="1" readonly>
+            <button class="quantity-button" onclick="changeQuantity('2-frizzé-', 1)">+</button>
+        </div>
+        <button class="add-button" onclick="addToCart('2 FRIZZÉ ', 5400, '2-frizzé-')">Agregar</button>
+    </div>
+ 
+  
+  
+  
+  
+  <!-- FIN DE PROMO -->
     <div class="product-card">
         <img src="https://statics.dinoonline.com.ar/imagenes/full_600x600_ma/3080167_f.jpg" alt="COCA COLA  BOTELLA RETORNABLE X 2.25 L">
         <div class="product-title">COCA COLA  BOTELLA RETORNABLE X 2.5 L</div>
@@ -657,7 +719,7 @@
             <label for="delivery-method">Método de entrega:</label>
             <select id="delivery-method" style="width: auto; padding: 5px;" onchange="updateDeliveryCost()">
                 <option value="local">Retiro en local</option>
-                <option value="delivery">Delivery (+$1000)</option>
+                <option value="delivery">Delivery (NO DISPONIBLE)</option>
             </select>
         </div>
         <div style="margin: 10px 0;">
@@ -820,6 +882,8 @@ function sendToWhatsApp() {
 
     if (paymentMethod === "transferencia") {
         message += `*Método de pago:* Transferencia\n*Alias para transferir:* valcortez. `;
+       
+       
     } else {
         message += `*Método de pago:* Efectivo\n*Instrucciones:* Debes abonar en el local cuando vayas a retirar tu pedido.`;
     }
