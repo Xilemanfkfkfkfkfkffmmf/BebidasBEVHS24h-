@@ -21,32 +21,48 @@
 
              
         
-        
         .header {
-            background-color: #e60012;
-            color: #fff;
-            padding: 15px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: fixed; /* Hace que la barra    
-            se quede fija */
-            width:93%; /* Ocupa el ancho 
-            completo */
-            top: 0; /* Se coloca en la parte 
-            superior de la pantalla */
-            z-index: 1000; /* Asegura que esté       
-            por encima del contenido */
-            
-            .header-title {
-            font-size: 18px; /* Tamaño de texto  
-            para que sea más remarcado */
-            font-weight: bold; /* Texto en 
-            negrita */
-            margin: auto;
-            
-     }  
-        }
+    background-color: #e60012;
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* Hace que la barra se quede fija */
+    width: 100%; /* Cambié de 93% a 100% para que ocupe todo el ancho */
+    top: 0; /* Se coloca en la parte superior de la pantalla */
+    z-index: 1000; /* Asegura que esté por encima del contenido */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
+}
+
+.header-title {
+    font-size: 18px; /* Tamaño de texto */
+    font-weight: bold; /* Texto en negrita */
+    margin: auto;
+}
+
+/* Media Query para pantallas más pequeñas, como móviles */
+@media (max-width: 768px) {
+    .header {
+        padding: 10px 15px; /* Reduce el padding en pantallas pequeñas */
+    }
+   
+    .header-title {
+        font-size: 16px; /* Ajusta el tamaño de fuente en pantallas pequeñas */
+    }
+}
+
+/* Media Query para tabletas o pantallas medianas */
+@media (max-width: 1024px) {
+    .header {
+        padding: 12px 18px; /* Ajuste del padding para tablets */
+    }
+
+    .header-title {
+        font-size: 17px; /* Ajuste de tamaño de fuente para tablets */
+    }
+}
+
         .cart-icon {
             cursor: pointer;
             display: flex;
