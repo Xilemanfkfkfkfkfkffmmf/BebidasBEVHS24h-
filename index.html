@@ -213,7 +213,7 @@
             font-size: 18px; /* Aumenta el tamaño del botón si es necesario */
             font-weight: bold;
         }
-        <!-- buscador -->
+        <!--buscador-->
         .header {
     background-color: #e60012;
     color: red;
@@ -391,30 +391,30 @@ margin-top: 0%; /* Aplica margen superior solo a las tarjetas de ofertas */
   <!-- PROMOS  -->
   
   
-  <div class="product-card">
-    <div class="offer-tag">¡PROMO!</div> <!-- Etiqueta de oferta -->
-        <img src="https://i.ibb.co/fvwdB4Q/1-20241130-215536-0000.png" alt=" 2 Lata Quilmes 710cc ">
-        <div class="product-title"> 2 Lata Quilmes 710cc </div>
-        <div class="price" data-price="4700">SIN STOCK</div>
+ <div class="product-card">
+        <div class="offer-tag">¡PROMO!</div>
+        <img src="https://i.ibb.co/ZWGrvMR/1-20241206-155346-0000.png" alt="(PROMO!) 2 VINO TERMIDOR + 1 GASEOSA TORASSO ">
+        <div class="product-title">2 VINO TERMIDOR + 1 GASEOSA TORASSO </div>
+        <div class="price" data-price="4800">$4.800</div>
         <div class="quantity-container">
-            <button class="quantity-button" onclick="changeQuantity('-2-lata-quilmes-710cc-', -1)">-</button>
-            <input type="number" id="quantity--2-lata-quilmes-710cc-" class="quantity-input" value="1" min="1" readonly>
-            <button class="quantity-button" onclick="changeQuantity('-2-lata-quilmes-710cc-', 1)">+</button>
+            <button class="quantity-button" onclick="changeQuantity('promo-2-vino-termidor-+-1-gaseosa-torasso-', -1)">-</button>
+            <input type="number" id="quantity-promo-2-vino-termidor-+-1-gaseosa-torasso-" class="quantity-input" value="1" min="1" readonly>
+            <button class="quantity-button" onclick="changeQuantity('promo-2-vino-termidor-+-1-gaseosa-torasso-', 1)">+</button>
         </div>
-        <button class="add-button" onclick="addToCart(' 2 Lata Quilmes 710cc ', SINSTOCK, '-2-lata-quilmes-710cc-')">Agregar</button>
+        <button class="add-button" onclick="addToCart('(PROMO!) 2 VINO TERMIDOR + 1 GASEOSA TORASSO ', 4800, 'promo-2-vino-termidor-+-1-gaseosa-torasso-')">Agregar</button>
     </div>
     
     <div class="product-card">
         <div class="offer-tag">¡PROMO!</div> <!-- Etiqueta de oferta -->
-        <img src="https://i.ibb.co/Xp3L0ZX/1-20241130-223154-0000.png" alt="2 FRIZZÉ ">
+        <img src="https://i.ibb.co/rcd7Wz8/1-20241130-223154-0000.png" alt="2 FRIZZÉ ">
         <div class="product-title">2 FRIZZÉ BLUE O ITALIAN LIMON</div>
-        <div class="price" data-price="5400">SIN STOCK</div>
+        <div class="price" data-price="5400">5.400</div>
         <div class="quantity-container">
             <button class="quantity-button" onclick="changeQuantity('2-frizzé-', -1)">-</button>
             <input type="number" id="quantity-2-frizzé-" class="quantity-input" value="1" min="1" readonly>
             <button class="quantity-button" onclick="changeQuantity('2-frizzé-', 1)">+</button>
         </div>
-        <button class="add-button" onclick="addToCart('2 FRIZZÉ ', SINSTOCK, '2-frizzé-')">Agregar</button>
+        <button class="add-button" onclick="addToCart('2 FRIZZÉ ', 5400, '2-frizzé-')">Agregar</button>
     </div>
  
   
@@ -425,25 +425,40 @@ margin-top: 0%; /* Aplica margen superior solo a las tarjetas de ofertas */
     <div class="product-card">
         <img src="https://statics.dinoonline.com.ar/imagenes/full_600x600_ma/3080167_f.jpg" alt="COCA COLA  BOTELLA RETORNABLE X 2.25 L">
         <div class="product-title">COCA COLA  BOTELLA RETORNABLE X 2.5 L</div>
-        <div class="price" data-price="2800">$2.800</div>
+        <div class="price" data-price="3300">$3.300</div>
         <div class="quantity-container">
             <button class="quantity-button" onclick="changeQuantity('coca-cola-botella-retornable-x-2.25-l', -1)">-</button>
             <input type="number" id="quantity-coca-cola-botella-retornable-x-2.25-l" class="quantity-input" value="1" min="1" readonly>
             <button class="quantity-button" onclick="changeQuantity('coca-cola-botella-retornable-x-2.25-l', 1)">+</button>
         </div>
-        <button class="add-button" onclick="addToCart('COCA COLA  BOTELLA RETORNABLE X 2.5 L', 2800, 'coca-cola-botella-retornable-x-2.25-l')">Agregar</button>
+        <button class="add-button" onclick="addToCart('COCA COLA  BOTELLA RETORNABLE X 2.5 L', 3300, 'coca-cola-botella-retornable-x-2.25-l')">Agregar</button>
     </div>
     <div class="product-card">
         <img src="https://luchocell.com/wp-content/uploads/2023/06/1709325013fdf5fe3960f83330f4431385e0f7ef10.webp.jpg" alt="COCA COLA Sabor Original Retornable 1.5 L (Vidrio)">
         <div class="product-title">COCA COLA Sabor Original Retornable 1.5 L (Vidrio)</div>
-        <div class="price" data-price="1800">$1.800</div>
+        <div class="price" data-price="2300">$2.300</div>
         <div class="quantity-container">
             <button class="quantity-button" onclick="changeQuantity('coca-cola-sabor-original-retornable-1.5-l-(vidrio)', -1)">-</button>
             <input type="number" id="quantity-coca-cola-sabor-original-retornable-1.5-l-(vidrio)" class="quantity-input" value="1" min="1" readonly>
             <button class="quantity-button" onclick="changeQuantity('coca-cola-sabor-original-retornable-1.5-l-(vidrio)', 1)">+</button>
         </div>
-        <button class="add-button" onclick="addToCart('COCA COLA Sabor Original Retornable 1.5 L (Vidrio)', 1800, 'coca-cola-sabor-original-retornable-1.5-l-(vidrio)')">Agregar</button>
+        <button class="add-button" onclick="addToCart('COCA COLA Sabor Original Retornable 1.5 L (Vidrio)', 2300, 'coca-cola-sabor-original-retornable-1.5-l-(vidrio)')">Agregar</button>
     </div>
+ <div class="product-card">
+        
+        <img src="https://ardiaprod.vtexassets.com/arquivos/ids/339841-800-auto?v=638689889053170000&width=800&height=auto&aspect=true" alt="Sprite Retornable 2L">
+        <div class="product-title">GASEOSA SPRITE LIMA-LIMÓN RETORNABLE 2 L.
+</div>
+        <div class="price" data-price="2500">$2.500</div>
+        <div class="quantity-container">
+            <button class="quantity-button" onclick="changeQuantity('sprite-retornable-2l', -1)">-</button>
+            <input type="number" id="quantity-sprite-retornable-2l" class="quantity-input" value="1" min="1" readonly>
+            <button class="quantity-button" onclick="changeQuantity('sprite-retornable-2l', 1)">+</button>
+        </div>
+        <button class="add-button" onclick="addToCart('Sprite Retornable 2L', 2500, 'sprite-retornable-2l')">Agregar</button>
+    </div>
+
+    
     <div class="product-card">
         <img src="https://supercristian.com.ar/wp-content/uploads/2020/10/68724.jpg" alt="PEPSI RETORNABLE X 2,25LT">
         <div class="product-title">PEPSI RETORNABLE X 2,25LT</div>
@@ -465,6 +480,30 @@ margin-top: 0%; /* Aplica margen superior solo a las tarjetas de ofertas */
             <button class="quantity-button" onclick="changeQuantity('7up-retornable-x-2,25lt', 1)">+</button>
         </div>
         <button class="add-button" onclick="addToCart('7UP RETORNABLE X 2,25LT', 2750, '7up-retornable-x-2,25lt')">Agregar</button>
+    </div>
+    <div class="product-card">
+        
+        <img src="https://ardiaprod.vtexassets.com/arquivos/ids/309449-1200-auto?v=638599357396430000&width=1200&height=auto&aspect=true" alt="Gaseosa 7 Up Botella 500 Ml.">
+        <div class="product-title">Gaseosa 7 Up Botella 500 Ml.</div>
+        <div class="price" data-price="1200">$1.200</div>
+        <div class="quantity-container">
+            <button class="quantity-button" onclick="changeQuantity('gaseosa-7-up-botella-500-ml.', -1)">-</button>
+            <input type="number" id="quantity-gaseosa-7-up-botella-500-ml." class="quantity-input" value="1" min="1" readonly>
+            <button class="quantity-button" onclick="changeQuantity('gaseosa-7-up-botella-500-ml.', 1)">+</button>
+        </div>
+        <button class="add-button" onclick="addToCart('Gaseosa 7 Up Botella 500 Ml.', 1200, 'gaseosa-7-up-botella-500-ml.')">Agregar</button>
+    </div>
+    <div class="product-card">
+        
+        <img src="https://static.cotodigital3.com.ar/sitios/fotos/full/00018800/00018875.jpg?3.0.176c" alt="Gaseosa PEPSI Botella 500 Cc">
+        <div class="product-title">Gaseosa PEPSI Botella 500 Cc</div>
+        <div class="price" data-price="1200">$1.200</div>
+        <div class="quantity-container">
+            <button class="quantity-button" onclick="changeQuantity('gaseosa-pepsi-botella-500-cc', -1)">-</button>
+            <input type="number" id="quantity-gaseosa-pepsi-botella-500-cc" class="quantity-input" value="1" min="1" readonly>
+            <button class="quantity-button" onclick="changeQuantity('gaseosa-pepsi-botella-500-cc', 1)">+</button>
+        </div>
+        <button class="add-button" onclick="addToCart('Gaseosa PEPSI Botella 500 Cc', 1200, 'gaseosa-pepsi-botella-500-cc')">Agregar</button>
     </div>
     <div class="product-card">
         <img src="https://arcordiezb2c.vteximg.com.br/arquivos/ids/176930/Gaseosa-Cola-Torasso-3-Lt-1-3273.jpg?v=638074173715800000" alt="COLA TORASSO 3L">
@@ -498,6 +537,31 @@ margin-top: 0%; /* Aplica margen superior solo a las tarjetas de ofertas */
         </div>
         <button class="add-button" onclick="addToCart('NARANJA TORASSO 3L', 1700, 'naranja-torasso-3l')">Agregar</button>
     </div>
+<div class="product-card">
+        
+        <img src="https://www.mediafire.com/convkey/df84/y9pqv2lxwbjkr5u7g.jpg" alt="TORASSO DE GRANADINA">
+        <div class="product-title">TORASSO DE GRANADINA</div>
+        <div class="price" data-price="1700">$1.700</div>
+        <div class="quantity-container">
+            <button class="quantity-button" onclick="changeQuantity('torasso-de-granadina', -1)">-</button>
+            <input type="number" id="quantity-torasso-de-granadina" class="quantity-input" value="1" min="1" readonly>
+            <button class="quantity-button" onclick="changeQuantity('torasso-de-granadina', 1)">+</button>
+        </div>
+        <button class="add-button" onclick="addToCart('TORASSO DE GRANADINA', 1700, 'torasso-de-granadina')">Agregar</button>
+    </div>
+<div class="product-card">
+        
+        <img src="https://www.mediafire.com/convkey/95d4/f4e5f50vm3v31av7g.jpg" alt="TORASSO DE POMELO BLANCO ">
+        <div class="product-title">TORASSO DE POMELO BLANCO </div>
+        <div class="price" data-price="1700">$1.700</div>
+        <div class="quantity-container">
+            <button class="quantity-button" onclick="changeQuantity('torasso-de-pomelo-blanco-', -1)">-</button>
+            <input type="number" id="quantity-torasso-de-pomelo-blanco-" class="quantity-input" value="1" min="1" readonly>
+            <button class="quantity-button" onclick="changeQuantity('torasso-de-pomelo-blanco-', 1)">+</button>
+        </div>
+        <button class="add-button" onclick="addToCart('TORASSO DE POMELO BLANCO ', 1700, 'torasso-de-pomelo-blanco-')">Agregar</button>
+    </div>
+    
     <div class="product-card">
         <img src="  https://statics.dinoonline.com.ar/imagenes/full_600x600_ma/3040776_f.jpg  " alt="TORASSO SODA 2L">
         <div class="product-title">TORASSO SODA 2L</div>
@@ -521,6 +585,7 @@ margin-top: 0%; /* Aplica margen superior solo a las tarjetas de ofertas */
         <button class="add-button" onclick="addToCart('AGUA SABORIZADA AWAFRUT MANZANA 2.25L', 2080, 'agua-saborizada-awafrut-manzana-')">Agregar</button>
     </div>
     <div class="product-card">
+
         <img src="https://www.lacoopeencasa.coop/media/lcec/publico/articulos/6/4/5/645931e69cc365fa962a4eea01171627" alt="AGUA SABORIZADA AWAFRUT POMENLO 2.25L">
         <div class="product-title">AGUA SABORIZADA AWAFRUT POMENLO 2.25L</div>
         <div class="price" data-price="2080">$2.080</div>
@@ -529,18 +594,43 @@ margin-top: 0%; /* Aplica margen superior solo a las tarjetas de ofertas */
             <input type="number" id="quantity-agua-saborizada-awafrut-pomenlo-2.25l" class="quantity-input" value="1" min="1" readonly>
             <button class="quantity-button" onclick="changeQuantity('agua-saborizada-awafrut-pomenlo-2.25l', 1)">+</button>
         </div>
-        <button class="add-button" onclick="addToCart('AGUA SABORIZADA AWAFRUT POMENLO 2.25L', 2080, 'agua-saborizada-awafrut-pomenlo-2.25l')">Agregar</button>
-    </div> 
+    <button class="add-button" onclick="addToCart('AGUA SABORIZADA AWAFRUT POMELO 2.25L', 2080, 'agua-saborizada-awafrut-pomenlo-2.25l')">Agregar</button>
+</div>
+        <div class="product-card">
+        
+        <img src="https://jumboargentina.vtexassets.com/arquivos/ids/818320-1200-auto?v=638482957331330000&width=1200&height=auto&aspect=true" alt="Saborizada H2oh Pomelo Sin Gas 500cc">
+        <div class="product-title">Saborizada H2oh Pomelo Sin Gas 500cc</div>
+        <div class="price" data-price="900">$900</div>
+        <div class="quantity-container">
+            <button class="quantity-button" onclick="changeQuantity('saborizada-h2oh-pomelo-sin-gas-500cc', -1)">-</button>
+            <input type="number" id="quantity-saborizada-h2oh-pomelo-sin-gas-500cc" class="quantity-input" value="1" min="1" readonly>
+            <button class="quantity-button" onclick="changeQuantity('saborizada-h2oh-pomelo-sin-gas-500cc', 1)">+</button>
+        </div>
+        <button class="add-button" onclick="addToCart('Saborizada H2oh Pomelo Sin Gas 500cc', 900, 'saborizada-h2oh-pomelo-sin-gas-500cc')">Agregar</button>
+    </div>
+    <div class="product-card">
+        
+        <img src="https://hiperlibertad.vtexassets.com/arquivos/ids/198733-1200-auto?v=637922217783530000&width=1200&height=auto&aspect=true" alt="Agua Eco de los Andes sin gas Botella 500cc x1">
+        <div class="product-title">Agua Eco de los Andes sin gas Botella 500cc x1</div>
+        <div class="price" data-price="1000">$1.000</div>
+        <div class="quantity-container">
+            <button class="quantity-button" onclick="changeQuantity('agua-eco-de-los-andes-sin-gas-botella-500cc-x1', -1)">-</button>
+            <input type="number" id="quantity-agua-eco-de-los-andes-sin-gas-botella-500cc-x1" class="quantity-input" value="1" min="1" readonly>
+            <button class="quantity-button" onclick="changeQuantity('agua-eco-de-los-andes-sin-gas-botella-500cc-x1', 1)">+</button>
+        </div>
+        <button class="add-button" onclick="addToCart('Agua Eco de los Andes sin gas Botella 500cc x1', 1000, 'agua-eco-de-los-andes-sin-gas-botella-500cc-x1')">Agregar</button>
+    </div>
+     
     <div class="product-card">
         <img src="https://ardiaprod.vtexassets.com/arquivos/ids/310557-800-auto?v=638599374646130000&width=800&height=auto&aspect=true" alt="GATORADE MANZANA 500ML">
         <div class="product-title">GATORADE MANZANA 500ML</div>
-        <div class="price" data-price="1100">$1.100</div>
+        <div class="price" data-price="1200">$1.200</div>
         <div class="quantity-container">
             <button class="quantity-button" onclick="changeQuantity('gatorade-manzana-500ml', -1)">-</button>
             <input type="number" id="quantity-gatorade-manzana-500ml" class="quantity-input" value="1" min="1" readonly>
             <button class="quantity-button" onclick="changeQuantity('gatorade-manzana-500ml', 1)">+</button>
         </div>
-        <button class="add-button" onclick="addToCart('GATORADE MANZANA 500ML', 1100, 'gatorade-manzana-500ml')">Agregar</button>
+        <button class="add-button" onclick="addToCart('GATORADE MANZANA 500ML', 1200, 'gatorade-manzana-500ml')">Agregar</button>
     </div>    
        <div class="product-card">
         <img src="https://ardiaprod.vtexassets.com/arquivos/ids/315103-800-auto?v=638599437045130000&width=800&height=auto&aspect=true" alt="GATORADE  BLUE 750ML">
@@ -551,7 +641,7 @@ margin-top: 0%; /* Aplica margen superior solo a las tarjetas de ofertas */
             <input type="number" id="quantity-gatorade-blue-750ml" class="quantity-input" value="1" min="1" readonly>
             <button class="quantity-button" onclick="changeQuantity('gatorade-blue-750ml', 1)">+</button>
         </div>
-        <button class="add-button" onclick="addToCart('GATORADE  BLUE 750ML', SIN STOCK, 'gatorade-blue-750ml')">Agregar</button>
+        <button class="add-button" onclick="addToCart('GATORADE  BLUE 750ML', SINSTOCK, 'gatorade-blue-750ml')">Agregar</button>
     </div>
     <div class="product-card">
         <img src="https://hiperlibertad.vtexassets.com/arquivos/ids/206525/ENERGIZANTE-ROCKSTAR-OW-PET-500CC-1-19132.jpg?v=638121802047270000" alt="ENERGISANTE ROCKTAR 500ML">
@@ -585,7 +675,7 @@ margin-top: 0%; /* Aplica margen superior solo a las tarjetas de ofertas */
             <input type="number" id="quantity-vodka1l" class="quantity-input" value="1" min="1" readonly>
             <button class="quantity-button" onclick="changeQuantity('vodka1l', 1)">+</button>
         </div>
-        <button class="add-button" onclick="addToCart('Dr. Lemon Con Vodka 1 L', SIN STOCK, 'vodka1l')">Agregar</button>
+        <button class="add-button" onclick="addToCart('Dr. Lemon Con Vodka 1 L', SINSTOCK, 'vodka1l')">Agregar</button>
     
 </div>
     <div class="product-card">
@@ -597,7 +687,7 @@ margin-top: 0%; /* Aplica margen superior solo a las tarjetas de ofertas */
             <input type="number" id="quantity-Dr.Lemon Vodka Pomelo 1L" class="quantity-input" value="1" min="1" readonly>
             <button class="quantity-button" onclick="changeQuantity('Dr.Lemon Vodka Pomelo 1L', 1)">+</button>
         </div>
-        <button class="add-button" onclick="addToCart('Dr.Lemon Vodka Pomelo 1L', SIN STOCK, 'Dr.Lemon Vodka Pomelo 1L')">Agregar</button>
+        <button class="add-button" onclick="addToCart('Dr.Lemon Vodka Pomelo 1L', SINSTOCK, 'Dr.Lemon Vodka Pomelo 1L')">Agregar</button>
    </div>
    
     
@@ -623,31 +713,31 @@ margin-top: 0%; /* Aplica margen superior solo a las tarjetas de ofertas */
             <input type="number" id="quantity-vodkaPomelo473" class="quantity-input" value="1" min="1" readonly>
             <button class="quantity-button" onclick="changeQuantity('vodkaPomelo473', 1)">+</button>
         </div>
-        <button class="add-button" onclick="addToCart('Espumante Frizze Evolution Blue 1 L', SIN STOCK, 'vodkaPomelo473')">Agregar</button>        
+        <button class="add-button" onclick="addToCart('Espumante Frizze Evolution Blue 1 L', SINSTOCK, 'vodkaPomelo473')">Agregar</button>        
     </div>
 
     <div class="product-card">
         
         <img src="https://distrimum.com.ar/wp-content/uploads/2024/12/20507.jpg" alt="FRIZZE ITALIAN POMELO ">
         <div class="product-title">FRIZZE ITALIAN POMELO </div>
-        <div class="price" data-price="3200">$3.200</div>
+        <div class="price" data-price="3200">SIN STOCK</div>
         <div class="quantity-container">
             <button class="quantity-button" onclick="changeQuantity('frizze-italian-pomelo-', -1)">-</button>
             <input type="number" id="quantity-frizze-italian-pomelo-" class="quantity-input" value="1" min="1" readonly>
             <button class="quantity-button" onclick="changeQuantity('frizze-italian-pomelo-', 1)">+</button>
         </div>
-        <button class="add-button" onclick="addToCart('FRIZZE ITALIAN POMELO ', 3200, 'frizze-italian-pomelo-')">Agregar</button>
+        <button class="add-button" onclick="addToCart('FRIZZE ITALIAN POMELO ', SINSTOCK, 'frizze-italian-pomelo-')">Agregar</button>
     </div>
     <div class="product-card">
         <img src="https://statics.dinoonline.com.ar/imagenes/large_460x460/3063672_l.jpg" alt="FRIZZE ITALIAN LIMONATA 1L">
         <div class="product-title">FRIZZE ITALIAN LIMONATA 1L</div>
-        <div class="price" data-price="3200">$3.200</div>
+        <div class="price" data-price="3000">$3.000</div>
         <div class="quantity-container">
             <button class="quantity-button" onclick="changeQuantity('frizze-italian-limonata-1l', -1)">-</button>
             <input type="number" id="quantity-frizze-italian-limonata-1l" class="quantity-input" value="1" min="1" readonly>
             <button class="quantity-button" onclick="changeQuantity('frizze-italian-limonata-1l', 1)">+</button>
         </div>
-        <button class="add-button" onclick="addToCart('FRIZZE ITALIAN LIMONATA 1L', 3200, 'frizze-italian-limonata-1l')">Agregar</button>
+        <button class="add-button" onclick="addToCart('FRIZZE ITALIAN LIMONATA 1L', 3000, 'frizze-italian-limonata-1l')">Agregar</button>
     </div>
     <div class="product-card">
         <img src="https://carrefourar.vtexassets.com/arquivos/ids/272447/7792798012633_01.jpg?v=638103580241200000" alt="Sidra Isidra Patagonia Frutada Con Sauco 750 Cc ">
@@ -664,7 +754,7 @@ margin-top: 0%; /* Aplica margen superior solo a las tarjetas de ofertas */
  <div class="product-card">
         <img src="https://alberdisa.vteximg.com.br/arquivos/ids/179976-1000-1000/Foto-Producto.png?v=638645151417630000" alt="LATA QUILMES 710cc">
         <div class="product-title">LATA QUILMES 710cc</div>
-        <div class="price" data-price="2600">$2.800</div>
+        <div class="price" data-price="2800">$2.800</div>
         <div class="quantity-container">
             <button class="quantity-button" onclick="changeQuantity('lata-quilmes-710cc', -1)">-</button>
             <input type="number" id="quantity-lata-quilmes-710cc" class="quantity-input" value="1" min="1" readonly>
@@ -709,6 +799,18 @@ margin-top: 0%; /* Aplica margen superior solo a las tarjetas de ofertas */
     
 </div>
            <!-- VINOSdiv-->
+           <div class="product-card">
+        
+            <img src="https://alpuntodeventa.com.ar/wp-content/uploads/3536-Vino-Tinto-Termidorx1Litro-1200x1200-1-1.jpg.webp" alt="Vino Termidor Tinto x 1 Litro">
+            <div class="product-title">Vino Termidor Tinto x 1 Litro</div>
+            <div class="price" data-price="1800">$1.800</div>
+            <div class="quantity-container">
+                <button class="quantity-button" onclick="changeQuantity('vino-termidor-tinto-x-1-litro', -1)">-</button>
+                <input type="number" id="quantity-vino-termidor-tinto-x-1-litro" class="quantity-input" value="1" min="1" readonly>
+                <button class="quantity-button" onclick="changeQuantity('vino-termidor-tinto-x-1-litro', 1)">+</button>
+            </div>
+            <button class="add-button" onclick="addToCart('Vino Termidor Tinto x 1 Litro', 1800, 'vino-termidor-tinto-x-1-litro')">Agregar</button>
+        </div>
     <div class="product-card">
         <img src="https://www.lacoopeencasa.coop/media/lcec/publico/articulos/1/3/5/135a6da336f97e29b3935def699e96db" alt="Vino de mesa resero tinto 1L">
         <div class="product-title">Vino de mesa resero tinto tetra brik 1L</div>
@@ -732,6 +834,18 @@ margin-top: 0%; /* Aplica margen superior solo a las tarjetas de ofertas */
         <button class="add-button" onclick="addToCart('Vino de mesa resero blanco tetra brik 1L', 1650, 'Vino de mesa resero blanco tetra brik 1L')">Agregar</button>
    </div>
    <!-- FIN DE VINOS  -->
+   <div class="product-card">
+        
+    <img src="https://acdn.mitiendanube.com/stores/001/973/129/products/copia-de-copia-de-copia-de-vino-a322dc7585b43ae79116983341982238-1024-1024.webp" alt="Vaso descartable 1L">
+    <div class="product-title">Vaso descartable 1L</div>
+    <div class="price" data-price="500">$500</div>
+    <div class="quantity-container">
+        <button class="quantity-button" onclick="changeQuantity('vaso-descartable-1l', -1)">-</button>
+        <input type="number" id="quantity-vaso-descartable-1l" class="quantity-input" value="1" min="1" readonly>
+        <button class="quantity-button" onclick="changeQuantity('vaso-descartable-1l', 1)">+</button>
+    </div>
+    <button class="add-button" onclick="addToCart('Vaso descartable 1L', 500, 'vaso-descartable-1l')">Agregar</button>
+</div>
    
   
  <!-- carrito de Compras -->  
@@ -782,7 +896,7 @@ margin-top: 0%; /* Aplica margen superior solo a las tarjetas de ofertas */
 .modal.show {
     display: flex; /* Mostrar modal cuando se activa */
 }
-<!-- barra de desp -->
+<!--BARRA-->
 
     
 </style>
@@ -792,7 +906,7 @@ margin-top: 0%; /* Aplica margen superior solo a las tarjetas de ofertas */
         max-height: 200px; /* Define una altura máxima */
         overflow-y: auto; /* Habilita la barra de desplazamiento vertical */
         padding-right: 10px; /* Espacio para evitar que la barra cubra el contenido */
-    }
+        }
 
     /* Personalización de la barra de desplazamiento */
     #cart-list::-webkit-scrollbar {
@@ -960,7 +1074,7 @@ function searchProducts() {
         }
     });
 }
-<!-- anunció -->
+
  // Mostrar el anuncio al cargar la página
     window.onload = function() {
         const anuncio = document.getElementById('anuncio');
