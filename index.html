@@ -82,16 +82,28 @@
             font-weight: bold;
             margin-left: 5px;
         }
-        .product-container {
+        .product-container1 {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(2, 2fr);
             gap: 5px;
-            padding: 30px;
+            padding: 10px;
             max-width: 800px;
             margin: auto;
-            margin-top:35px; /*añadir margen a 
+            margin-top:45px; /*añadir margen a 
             los productos */
         }
+          .product-container2 {
+            display: grid;
+            grid-template-columns: repeat(2, 2fr);
+            gap: 5px;
+            padding: 10px;
+            max-width: 800px;
+            margin: auto;
+            margin-top:0px; /*añadir margen a 
+            los productos */
+         }
+         
+         
         .product-card {
             background-color: #fff;
             border: 3px solid #ddd;
@@ -231,7 +243,7 @@
 .search-container {
     position: absolute;
     left: 20px;
-    top: 17px;
+    top: 13px;
     display: flex;
     align-items: center;
     transition: all 0.3s ease; /* Animación para la transición */
@@ -355,6 +367,20 @@ margin-top: 0%; /* Aplica margen superior solo a las tarjetas de ofertas */
     text-align: left;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 } 
+.titulo-centrado {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border: 3px solid #ddd;
+    border-radius: 6px; /* Bordes redondeados */
+    background-color: #ffd600; /* Fondo blanco */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding: 0 20px; /* Espacio interno en los lados */
+    max-width: 80%; /* Limita el ancho máximo */
+    box-sizing: border-box; /* Incluye bordes y relleno en el ancho total */
+}
     
     </style>
     <div class="fondo-oscuro" id="fondoOscuro"></div>
@@ -376,7 +402,8 @@ margin-top: 0%; /* Aplica margen superior solo a las tarjetas de ofertas */
     </div>
     
     <!-- Título de la barra de navegación -->
-    <div class="header-title">BebidasBEVHS24h</div>
+    <div class="header-title">BebidasBEVHS24h
+    </div>
     
     <!-- Icono del carrito -->
     <div class="cart-icon" onclick="toggleModal()">
@@ -387,7 +414,7 @@ margin-top: 0%; /* Aplica margen superior solo a las tarjetas de ofertas */
     <!-- colocar productos -->
 </div>
 
-<div class="product-container">
+<div class="product-container1">
   <!-- PROMOS  -->
   
   
@@ -416,12 +443,14 @@ margin-top: 0%; /* Aplica margen superior solo a las tarjetas de ofertas */
         </div>
         <button class="add-button" onclick="addToCart('2 FRIZZÉ ', 5400, '2-frizzé-')">Agregar</button>
     </div>
- 
+    </div>
   
-  
+  <h1 class="titulo-centrado">GASEOSAS</h1>
+</div>
   
   
   <!-- FIN DE PROMO -->
+  <div class="product-container2">
     <div class="product-card">
         <img src="https://statics.dinoonline.com.ar/imagenes/full_600x600_ma/3080167_f.jpg" alt="COCA COLA  BOTELLA RETORNABLE X 2.25 L">
         <div class="product-title">COCA COLA  BOTELLA RETORNABLE X 2.5 L</div>
@@ -573,6 +602,11 @@ margin-top: 0%; /* Aplica margen superior solo a las tarjetas de ofertas */
         </div>
         <button class="add-button" onclick="addToCart('TORASSO SODA 2L', 1500, 'torasso-soda-2l')">Agregar</button>
     </div>
+    </div>
+    <h1 class="titulo-centrado">AGUAS Y JUGOS</h1>
+</div>
+  
+    <div class="product-container2">
     <div class="product-card">
         <img src="https://carrefourar.vtexassets.com/arquivos/ids/277296/7792798010974_E01.jpg?v=638128491336470000.com%2Fsumer-app-90b8f.appspot.com%2Fproduct_photos%252Fbef3fb5a6f9871ac3a5c0ae3666275d0%252F2c8708f0-b942-11ec-90d4-ab5ba84ed336%3Falt%3Dmedia%26token%3D081a604a-145e-458d-9591-a161b1d73c42" alt="AGUA SABORIZADA AWAFRUT MANZANA ">
         <div class="product-title">AGUA SABORIZADA AWAFRUT MANZANA 2.25L </div>
@@ -620,6 +654,22 @@ margin-top: 0%; /* Aplica margen superior solo a las tarjetas de ofertas */
         </div>
         <button class="add-button" onclick="addToCart('Agua Eco de los Andes sin gas Botella 500cc x1', 1000, 'agua-eco-de-los-andes-sin-gas-botella-500cc-x1')">Agregar</button>
     </div>
+    <div class="product-card">
+        <img src="https://haceclick.com.ar/wp-content/uploads/2021/03/042510000517030-768x768.jpg" alt="JUGO PURA FRUTA NARANJA 1L">
+        <div class="product-title">JUGO PURA FRUTA NARANJA 1L</div>
+        <div class="price" data-price="2700">$2.700</div>
+        <div class="quantity-container">
+            <button class="quantity-button" onclick="changeQuantity('jugo-pura-fruta-naranja-1l', -1)">-</button>
+            <input type="number" id="quantity-jugo-pura-fruta-naranja-1l" class="quantity-input" value="1" min="1" readonly>
+            <button class="quantity-button" onclick="changeQuantity('jugo-pura-fruta-naranja-1l', 1)">+</button>
+        </div>
+        <button class="add-button" onclick="addToCart('JUGO PURA FRUTA NARANJA 1L', 2700, 'jugo-pura-fruta-naranja-1l')">Agregar</button>
+    </div>
+      </div>
+    <h1 class="titulo-centrado">ENERGISANTES</h1>
+</div>
+  
+    <div class="product-container2">
      
     <div class="product-card">
         <img src="https://ardiaprod.vtexassets.com/arquivos/ids/310557-800-auto?v=638599374646130000&width=800&height=auto&aspect=true" alt="GATORADE MANZANA 500ML">
@@ -654,17 +704,11 @@ margin-top: 0%; /* Aplica margen superior solo a las tarjetas de ofertas */
         </div>
         <button class="add-button" onclick="addToCart('ENERGISANTE ROCKTAR 500ML', 1000, 'energisante-rocktar-500ml')">Agregar</button>
      </div>
-     <div class="product-card">
-        <img src="https://haceclick.com.ar/wp-content/uploads/2021/03/042510000517030-768x768.jpg" alt="JUGO PURA FRUTA NARANJA 1L">
-        <div class="product-title">JUGO PURA FRUTA NARANJA 1L</div>
-        <div class="price" data-price="2700">$2.700</div>
-        <div class="quantity-container">
-            <button class="quantity-button" onclick="changeQuantity('jugo-pura-fruta-naranja-1l', -1)">-</button>
-            <input type="number" id="quantity-jugo-pura-fruta-naranja-1l" class="quantity-input" value="1" min="1" readonly>
-            <button class="quantity-button" onclick="changeQuantity('jugo-pura-fruta-naranja-1l', 1)">+</button>
-        </div>
-        <button class="add-button" onclick="addToCart('JUGO PURA FRUTA NARANJA 1L', 2700, 'jugo-pura-fruta-naranja-1l')">Agregar</button>
-    </div>
+       </div>
+    <h1 class="titulo-centrado">APERITIVOS</h1>
+</div>
+  
+    <div class="product-container2">
     
     <div class="product-card">
         <img src="https://statics.dinoonline.com.ar/imagenes/large_460x460/3070962_l.jpg" alt="Dr Lemon Vodka 1L">
@@ -750,6 +794,11 @@ margin-top: 0%; /* Aplica margen superior solo a las tarjetas de ofertas */
         </div>
         <button class="add-button" onclick="addToCart('Sidra Isidra Patagonia Frutada Con Sauco 750 Cc', 5000, 'Sidra Isidra Patagonia Frutada Con Sauco 750 Cc')">Agregar</button>        
  </div>
+    </div>
+    <h1 class="titulo-centrado">CERVEZAS</h1>
+</div>
+  
+    <div class="product-container2">
  <!-- CERVEZA -->
  <div class="product-card">
         <img src="https://alberdisa.vteximg.com.br/arquivos/ids/179976-1000-1000/Foto-Producto.png?v=638645151417630000" alt="LATA QUILMES 710cc">
@@ -796,8 +845,12 @@ margin-top: 0%; /* Aplica margen superior solo a las tarjetas de ofertas */
             <button class="quantity-button" onclick="changeQuantity('Cerveza Andes Clasica Botella retornable 1L', 1)">+</button>
         </div>
         <button class="add-button" onclick="addToCart('Cerveza Andes Clasica Botella retornable 1L', 2900, 'Cerveza Andes Clasica Botella retornable 1L')">Agregar</button>
-    
+    </div>
+      </div>
+    <h1 class="titulo-centrado">VINOS</h1>
 </div>
+  
+    <div class="product-container2">
            <!-- VINOSdiv-->
            <div class="product-card">
         
@@ -834,6 +887,11 @@ margin-top: 0%; /* Aplica margen superior solo a las tarjetas de ofertas */
         <button class="add-button" onclick="addToCart('Vino de mesa resero blanco tetra brik 1L', 1650, 'Vino de mesa resero blanco tetra brik 1L')">Agregar</button>
    </div>
    <!-- FIN DE VINOS  -->
+     </div>
+    <h1 class="titulo-centrado">DESCARTABLE</h1>
+</div>
+  
+    <div class="product-container2">
    <div class="product-card">
         
     <img src="https://acdn.mitiendanube.com/stores/001/973/129/products/copia-de-copia-de-copia-de-vino-a322dc7585b43ae79116983341982238-1024-1024.webp" alt="Vaso descartable 1L">
@@ -1046,7 +1104,7 @@ function changeQuantity(productId, change) {
 
     quantityInput.value = currentQuantity;
 }    <!-- buscador -->
-    // Función para alternar la visibilidad de la caja de búsqueda
+   // Función para alternar la visibilidad de la caja de búsqueda
 function toggleSearch() {
     const searchInput = document.getElementById('search-input');
     searchInput.classList.toggle('show'); /* Alterna la visibilidad del campo de búsqueda */
@@ -1062,20 +1120,65 @@ function searchProducts() {
     // Obtener todos los productos
     const products = document.querySelectorAll('.product-card');
 
+    // Obtener todos los títulos (h1 con clase .titulo-centrado)
+    const titles = document.querySelectorAll('.titulo-centrado');
+
+    // Obtener contenedor donde se mostrará el mensaje "Producto no encontrado"
+    let noResultsMessage = document.getElementById('no-results-message');
+    if (!noResultsMessage) {
+        // Crear mensaje si no existe
+        noResultsMessage = document.createElement('div');
+        noResultsMessage.id = 'no-results-message';
+        noResultsMessage.style.display = 'none'; // Oculto por defecto
+        noResultsMessage.style.textAlign = 'center'; // Centrado
+        noResultsMessage.style.marginTop = '20px'; // Espacio superior
+        noResultsMessage.style.padding = '10px'; // Espaciado interno
+        noResultsMessage.style.color = '#fff'; // Color del texto
+        noResultsMessage.style.backgroundColor = '#f44336'; // Fondo rojo (puedes cambiarlo)
+        noResultsMessage.style.border = '2px solid #d32f2f'; // Borde rojo oscuro
+        noResultsMessage.style.borderRadius = '5px'; // Bordes redondeados
+        noResultsMessage.style.maxWidth = '300px'; // Ancho máximo
+        noResultsMessage.style.marginLeft = 'auto'; // Centrar horizontalmente
+        noResultsMessage.style.marginRight = 'auto'; // Centrar horizontalmente
+        noResultsMessage.textContent = 'PRODUCTO NO ENCONTRADO 😔';
+        document.body.appendChild(noResultsMessage); // Insertarlo en el cuerpo (puedes personalizar esto)
+    }
+
     // Filtrar productos basados en el nombre
+    let hasVisibleProducts = false;
+
     products.forEach(product => {
         const productTitle = product.querySelector('.product-title').textContent.toLowerCase();
         
         // Mostrar solo los productos que coinciden con la búsqueda
         if (productTitle.includes(searchQuery)) {
             product.style.display = 'block';  // Mostrar producto
+            hasVisibleProducts = true;
         } else {
             product.style.display = 'none';   // Ocultar producto
         }
     });
-}
 
- // Mostrar el anuncio al cargar la página
+    // Ocultar títulos si hay búsqueda activa
+    if (searchQuery !== '') {
+        titles.forEach(title => {
+            title.style.display = 'none'; // Ocultar los títulos durante la búsqueda
+        });
+    } else {
+        titles.forEach(title => {
+            title.style.display = 'block'; // Mostrar los títulos si no hay búsqueda
+        });
+    }
+
+    // Mostrar u ocultar el mensaje de "Producto no encontrado"
+    if (!hasVisibleProducts) {
+        noResultsMessage.style.display = 'block'; // Mostrar mensaje
+    } else {
+        noResultsMessage.style.display = 'none'; // Ocultar mensaje
+    }
+}
+<!-- anunció -->
+// Mostrar el anuncio al cargar la página
     window.onload = function() {
         const anuncio = document.getElementById('anuncio');
         const fondoOscuro = document.getElementById('fondoOscuro');
@@ -1094,6 +1197,7 @@ function searchProducts() {
         anuncio.style.display = 'none';
         fondoOscuro.style.display = 'none';
     }
+
 </script>
 
 
